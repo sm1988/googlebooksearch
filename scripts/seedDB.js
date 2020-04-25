@@ -4,8 +4,13 @@ const db = require("../models");
 
 //This file empties the Items & Users collections and inserts the items & users below
 
+// mongoose.connect(
+// 	process.env.MONGODB_URI || "mongodb://localhost:27017/googlebooksearch",
+// 	{ useNewUrlParser: true }
+// );
+
 mongoose.connect(
-	process.env.MONGODB_URI || "mongodb://localhost:27017/googlebooksearch",
+	process.env.MONGODB_URI || "mongodb://bookworm:bookworm123@ds033459.mlab.com:33459/heroku_5hff5jx4",
 	{ useNewUrlParser: true }
 );
 

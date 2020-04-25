@@ -10,9 +10,10 @@ class Search extends React.Component {
         books: []
     };
 
-    componentDidMount() {
-        this.searchBook();
-    }
+ 
+    // componentDidMount() {
+    //     this.searchBook();
+    // }
 
     makeBook = bookData => {
         return {
@@ -54,7 +55,7 @@ class Search extends React.Component {
                     handleFormSubmit={this.handleFormSubmit}
                 />
                 <div className="container">
-                    <h2>Results</h2>
+                    
                     <Results books={this.state.books} />
                 </div>
             </div>
